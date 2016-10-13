@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">Truth Or Dare</string>
     <string name="location_title">Choose</string>
+    <string name="group_title">Choose</string>
     <string name="location_subtitle">Location  >  Group  >  Players</string>
+    <string name="group_subtitle">Location  >  Group  >  Players</string>
     <string name="location_bottom_text">Questions change based on location</string>
+    <string name="group_bottom_text">Questions change based on group</string>
+    <string name="player_bottom_text">Questions change based on gender</string>
+
 </resources>

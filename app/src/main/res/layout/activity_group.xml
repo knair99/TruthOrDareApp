@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_group"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.mimoaly.truthordare.GroupActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/top_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tealLight"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:subtitle="@string/location_subtitle"
+        app:subtitleTextAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:subtitleTextColor="@color/white"
+        app:title="@string/location_title"
+        app:titleTextAppearance="@style/TextAppearance.AppCompat.Large"
+        app:titleTextColor="@color/white" />
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/bottom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/tealLight"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:subtitle="@string/group_bottom_text"
+        app:subtitleTextAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        app:subtitleTextColor="@color/white" />
+
+    <ImageButton
+        android:id="@+id/button_acquaintance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/top_toolbar"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="124dp"
+        android:background="@color/white"
+        app:srcCompat="@mipmap/ic_acquaintance"
+        android:onClick="btnAcquaintanceClick"/>
+
+    <TextView
+        android:id="@+id/acquaintance_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button_acquaintance"
+        android:layout_marginStart="55dp"
+        android:text="Acquaintance" />
+
+    <ImageButton
+        android:id="@+id/button_friends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/button_acquaintance"
+        android:layout_marginEnd="61dp"
+        android:background="@color/white"
+        app:srcCompat="@mipmap/ic_friends"
+        android:onClick="btnFriendsClick"/>
+
+    <TextView
+        android:id="@+id/friends_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button_friends"
+        android:layout_below="@+id/button_friends"
+        android:text="Friends"
+        />
+
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:id="@+id/button_couple"
+        android:background="@color/white"
+        app:srcCompat="@mipmap/ic_couple"
+        android:layout_below="@+id/acquaintance_textview"
+        android:layout_alignStart="@+id/button_acquaintance"
+        android:onClick="btnCoupleClick"/>
+
+    <TextView
+        android:id="@+id/couple_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Couple"
+        android:layout_below="@+id/button_couple"
+        android:layout_alignStart="@+id/button_couple"
+        android:layout_alignEnd="@+id/acquaintance_textview" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_family"
+        android:id="@+id/button_family"
+        android:background="@color/white"
+        android:layout_alignTop="@+id/button_couple"
+        android:layout_alignStart="@+id/friends_textview"
+        android:onClick="btnFamilyClick"/>
+
+    <TextView
+        android:id="@+id/family_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Family"
+        android:layout_below="@+id/button_couple"
+        android:layout_alignStart="@+id/button_family"
+        android:layout_alignEnd="@+id/friends_textview" />
+
+
+</RelativeLayout>
